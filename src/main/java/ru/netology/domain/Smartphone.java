@@ -23,6 +23,11 @@ public class Smartphone extends Product {
     }
 
     @Override
+    public boolean matches(String search) {
+        return super.matches(search) || manufacturer.equals(search);
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

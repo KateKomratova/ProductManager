@@ -6,11 +6,10 @@ import ru.netology.domain.Book;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
 import ru.netology.repository.ProductRepository;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 
-class ManagerTestNonEmptyWithSetup {
+class ProductManagerTest {
     private ProductRepository repository = new ProductRepository();
     private ProductManager manager = new ProductManager(repository);
     private Book book1 = new Book(1, "Garry Potter", 150, "Rowling J.");
